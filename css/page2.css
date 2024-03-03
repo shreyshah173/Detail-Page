@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.hero-section {
+	background-color: rgb(49, 56, 87);
+	padding-bottom: 3rem;
+}
+
+.timeline_title {
+	height: 150px;
+	width: 100%;
+	position: relative;
+	display: grid;
+	place-items: center;
+	padding-left: 10px;
+	font-size: 1.8rem;
+	color: rgb(206, 222, 255);
+}
+.center {
+	width: 700px;
+}
+
+@media (max-width: 700px) {
+	.Time_line_Title {
+		font-size: 20px;
+	}
+	.timeline_title {
+		height: max-content;
+		align-items: center;
+	}
+}
+
+.container {
+	max-width: 750px;
+	margin: 50px auto;
+	min-height: 100%;
+	padding-right: 20px;
+	font-family: "Poppins", sans-serif;
+}
+
+.container p {
+	font-weight: 300;
+	line-height: 1.5;
+	opacity: 0.9;
+}
+
+.timeline {
+	position: relative;
+	padding-left: 4rem;
+	margin: 0 0 0 30px;
+	color: white;
+}
+.timeline:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 4px;
+	height: 100%;
+	background: rgb(145, 145, 145);
+}
+.timeline .timeline-container {
+	position: relative;
+	margin-bottom: 2.5rem;
+}
+.timeline .timeline-container .timeline-icon {
+	position: absolute;
+	left: -88px;
+	top: 4px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 2rem;
+	background: #4f537b;
+}
+.timeline .timeline-container .timeline-icon i {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.timeline .timeline-container .timeline-icon img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.timeline .timeline-container {
+	/* background: #27293d; */
+	border-radius: 3px;
+	padding: 20px 20px 15px;
+	/* position: relative; */
+}
+
+.timeline-body {
+	border-radius: 3px;
+	padding: 0 20px 15px 0;
+	box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+.timeline-button {
+	border: 1px solid #cde2ff;
+	outline: none;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	text-transform: capitalize;
+	border-radius: 3px;
+	background-color: transparent;
+	color: #b6d0ff;
+	transition-duration: 0.5s;
+}
+.timeline-button:hover {
+	background-color: #003a70;
+	color: #ffffff;
+}
+/* .timeline .timeline-container .timeline-body:before {
+	content: "";
+	background: inherit;
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	left: -10px;
+	transform: rotate(45deg);
+	border-radius: 0 0 0 2px;
+} */
+.timeline .timeline-container .timeline-body .timeline-title {
+	margin-bottom: 1.4rem;
+}
+.timeline .timeline-container .timeline-title .badge {
+	padding: 4px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: bold;
+}
+.timeline .timeline-container .timeline-body .timeline-subtitle {
+	font-weight: 300;
+	font-style: italic;
+	opacity: 0.4;
+	margin-top: 16px;
+	font-size: 11px;
+}
+.timeline .timeline-container.primary .badge,
+.timeline .timeline-container.primary .timeline-icon {
+	background: #1768b9 !important;
+}
+.timeline .timeline-container.info .badge,
+.timeline .timeline-container.info .timeline-icon {
+	background: #0e8da3 !important;
+}
+.timeline .timeline-container.success .badge,
+.timeline .timeline-container.success .timeline-icon {
+	background: #02725c !important;
+}
+.timeline .timeline-container.warning .badge,
+.timeline .timeline-container.warning .timeline-icon {
+	background: #1b257c !important;
+}
+.timeline .timeline-container.danger .badge,
+.timeline .timeline-container.danger .timeline-icon {
+	background: #923353 !important;
+}
+
+.author {
+	font-family: inherit;
+	padding: 3em;
+	text-align: center;
+	width: 100%;
+	color: white;
+}
+.author a:link,
+.author a:visited {
+	color: white;
+}
+.author a:link:hover,
+.author a:visited:hover {
+	text-decoration: none;
+}
+.author .btn:link,
+.author .btn:visited {
+	margin-top: 1em;
+	text-decoration: none;
+	display: inline-block;
+	font-family: inherit;
+	font-weight: 100;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	user-select: none;
+	background-color: black;
+	padding: 1.5em 2rem;
+	border-radius: 1em;
+	transition: 0.5s all;
+}
+.author .btn:link:hover,
+.author .btn:link:focus,
+.author .btn:link:active,
+.author .btn:visited:hover,
+.author .btn:visited:focus,
+.author .btn:visited:active {
+	background-color: #1a1a1a;
+}
+.completed {
+	background: rgb(102, 255, 0);
+	height: 250px;
+	display: grid;
+	place-items: center;
+	color: #000;
+	position: relative;
+	font-size: 1.4rem;
+	padding: 30px;
+}
+.completed::after {
+	content: "";
+	background: inherit;
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	left: -15px;
+	top: 20px;
+	transform: rotate(45deg);
+	border-radius: 0 0 0 2px;
+}
+.completed img {
+	width: 100px;
+	object-fit: contain;
+}
+.completed_icon {
+	display: grid;
+	place-items: center;
+	padding: 10px;
+	background: rgb(253, 253, 253) !important;
+	border: solid 1px #a0a0a0 !important;
+}
+.timeline-body {
+	position: relative;
+}
+.timeline-lessons {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 2rem;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.timeline-lesson,
+.timeline-practice {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.timeline-headline {
+	font-family: "poppins", sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #ebeaea;
+	font-size: 1.6rem;
+	padding-left: 20px;
+	position: relative;
+}
+
+.timeline-content {
+	font-size: 0.8rem;
+	margin-top: 0.3rem;
+	margin-bottom: 1rem;
+	padding-left: 20px;
+}
+
+.timeline-foot {
+	padding-left: 20px;
+}
+
+.icon,
+.practice {
+	position: relative;
+}
+
+.gradient {
+	background: linear-gradient(21deg, #101523 40.15%, rgba(16, 21, 35, 0) 84.91%),
+		linear-gradient(35deg, #101523 42.49%, rgba(16, 21, 35, 0) 76.69%),
+		linear-gradient(97deg, #2d3855 21.98%, rgba(45, 56, 85, 0) 41.4%);
+
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.timeline-html {
+	background: url(https://img.freepik.com/free-vector/man-travel-near-lake-mountain-illustration_107791-20294.jpg?w=826&t=st=1709445768~exp=1709446368~hmac=7adb65188bcb8b3eb300d74b0150e763810b30e5f510260b63baea591c9a4331);
+
+	background-position: center;
+	background-size: cover;
+}
+
+.timeline-css {
+	background: url(https://img.freepik.com/free-vector/river-night-forest-mountain-nature-vector-cartoon-landscape-green-grass-tree-moon-light-scene-beautiful-flowing-stream-near-meadow-empty-woods-panoramic-with-flying-glowworms-fireflies_107791-21443.jpg?t=st=1709460180~exp=1709463780~hmac=8e9f32e011c6beebbc10a65c0f86caa51efa556f45faaaf257850d636a6c1a5b&w=900);
+
+	background-position: center;
+	background-size: cover;
+}
+
+.timeline-javascript {
+	background: url(https://img.freepik.com/free-vector/night-metropolis-empty-four-lane-illuminated-with-street-lights-speed-highway-town-freeway-with-overpass-bridge-going-skyscrapers-buildings-horizon-cartoon-vector-illustration_1441-3388.jpg);
+	background-position: center;
+
+	background-size: cover;
+}
+
+.timeline-react {
+	background: url(https://img.freepik.com/free-vector/flat-design-adventure-background_23-2149059266.jpg?t=st=1709461684~exp=1709465284~hmac=d1ec866b59b0381d7edd56950b43390a5e69ba13d3e3293c4f71fbbef2f83083&w=740);
+	background-position: center;
+
+	background-size: cover;
+}
+
+.timeline-node {
+	background: url(https://img.freepik.com/free-vector/future-metropolis-seafront-with-illuminating-neon-colors-lights-futuristic-skyscrapers_33099-1489.jpg?t=st=1709461874~exp=1709465474~hmac=4d386a39a52560335a762337a4878b5a51e932526ccd91b46d50d99cd6d7cbee&w=740);
+
+	background-position: center;
+	background-size: cover;
+}
+
+.timeline-mongodb {
+	background: url(https://img.freepik.com/free-vector/abstract-travel-landing-page_23-2148193037.jpg?t=st=1709461644~exp=1709465244~hmac=5056f3dbe8f2c7507e750e2082f77dc5b7ec50013a660f3cc3415a6200c128b8&w=740);
+	background-position: center;
+
+	background-size: cover;
+}
+/* hero popup */
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 4000;
+	background-color: rgba(0, 0, 0, 0.24);
+	display: none;
+}
+
+.more_section {
+	width: 50%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: -50%;
+	display: grid;
+	z-index: 5555;
+	transition: 0.5s ease-in-out;
+}
+
+.more_container {
+	width: 100%;
+	height: 100vh;
+
+	overflow-y: scroll;
+	background-color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px 30px;
+	border-radius: 0 8px 8px 0;
+	position: relative;
+	font-family: "Roboto", sans-serif;
+}
+
+.more_container::-webkit-scrollbar {
+	display: none;
+}
+.more_container_head {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.more_container_title {
+	font-size: 1.2rem;
+}
+.more_banner_holder {
+	margin-top: 20px;
+	width: 100%;
+	height: 180px;
+}
+.more_banner_holder img {
+	width: 100%;
+	height: 100%;
+}
+.more_button {
+	width: 60px;
+	cursor: pointer;
+}
+.more_description {
+	width: 100%;
+	margin-top: 20px;
+}
+.more_description p {
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+.more_close {
+	font-weight: 600;
+	font-size: 1.3rem;
+	cursor: pointer;
+	z-index: 888;
+}
+
+.max_width_section {
+	margin: 0 auto;
+	max-width: 1400px;
+	width: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.more_section2 {
+	width: 50%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: -50%;
+	display: block;
+	z-index: 6555;
+	transition: 0.5s ease-in-out;
+}
+
+.more_section2_container {
+	width: 100%;
+	height: 100vh;
+	background-color: #fff;
+	font-family: "Roboto", sans-serif;
+	padding: 20px 30px;
+	border-radius: 0 8px 8px 0;
+}
+
+.second {
+	width: 100px;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+	cursor: pointer;
+}
