@@ -15,7 +15,7 @@
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	position: relative;
 	overflow: hidden;
-	outline: 1px solid #036cdb ;
+	outline: 1px solid #036cdb;
 	box-shadow: rgba(37, 118, 240, 0.568) 0px 19px 38px,
 		rgba(32, 96, 168, 0.22) 0px 15px 12px;
 
@@ -73,6 +73,7 @@
 
 .right-section {
 	position: relative;
+	min-width: 280px;
 }
 
 .course-right {
@@ -80,10 +81,21 @@
 	bottom: 0;
 }
 
+@media (max-width: 750px) {
+	.course-box-container {
+		flex-direction: column;
+	}
+
+	.right-section {
+		justify-content: start !important;
+		align-items: start;
+	}
+}
+
 /* lesson box */
 
 .lesson-box-container {
-	width: 400px;
+	width: 380px;
 	border-radius: 10px;
 	overflow: hidden;
 	border: 8px solid black;
