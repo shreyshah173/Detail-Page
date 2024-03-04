@@ -40,72 +40,145 @@
 		</style>
 	</head>
 	<body>
-		<div class="course-box py-16 bg-blue-950 min-h-screen">
-			<div class="course-box-container">
-				<div class="gradient-top"></div>
-				<div class="left-section">
-					<div class="top-left flex gap-16 mb-20">
-						<div class="lessons flex gap-3 align-center">
-							<div class="icon">
-								<i class="ri-file-2-line"></i>
+		<div class="course-item">
+			<div class="course-box pt-16 px-5 bg-blue-950 min-h-screen">
+				<div class="course-box-container">
+					<div class="gradient-top"></div>
+					<div class="left-section">
+						<div class="top-left flex gap-16 mb-20">
+							<div class="lessons flex gap-3 align-center">
+								<div class="icon">
+									<i class="ri-file-2-line"></i>
+								</div>
+								<p>23 lessons</p>
 							</div>
-							<p>23 lessons</p>
+							<div class="practice flex gap-3 align-center">
+								<div class="practice-icon">
+									<i class="ri-code-box-line"></i>
+								</div>
+								<p>33 practices</p>
+							</div>
 						</div>
-						<div class="practice flex gap-3 align-center">
-							<div class="practice-icon">
-								<i class="ri-code-box-line"></i>
+						<div class="course-language flex gap-8 mb-6">
+							<div class="subtitle flex gap-1">
+								<img
+									class="w-4"
+									src="https://d3dq4v2xxejk8c.cloudfront.net/uploads/SkPf73mCwpi4P6DCP_html.svg"
+									alt="" />
+
+								<p>HTML</p>
 							</div>
-							<p>33 practices</p>
+							<div class="subtitle flex gap-1">
+								<img
+									class="w-4"
+									src="	https://d3dq4v2xxejk8c.cloudfront.net/uploads/XmDm72Y3eQcbFkvih_JS.svg"
+									alt="" />
+
+								<p>JavaScript</p>
+							</div>
+						</div>
+
+						<h1 class="big-heading text-4xl font-semibold mb-4">
+							Stellar JavaScript for the React Universe
+						</h1>
+						<p class="course-content">
+							This course is an exciting step towards understanding necessary
+							JavaScript basics and ES6 specifically, which are essential to
+							leverage the power of React. Learn about JavaScript data
+							structures, functions, and new ES6 features to lay a solid
+							foundation for your journey into
+						</p>
+						<div class="flex gap-8">
+							<button class="continue-button">Continue Course</button>
+							<div class="progress-box">
+								<p>Progress: 50%</p>
+								<!-- Circular Progress Placeholder (You may need to use a third-party library or implement your own) -->
+							</div>
 						</div>
 					</div>
-					<div class="course-language flex gap-8 mb-6">
-						<div class="subtitle flex gap-1">
-							<img
-								class="w-4"
-								src="https://d3dq4v2xxejk8c.cloudfront.net/uploads/SkPf73mCwpi4P6DCP_html.svg"
-								alt="" />
 
-							<p>HTML</p>
-						</div>
-						<div class="subtitle flex gap-1">
-							<img
-								class="w-4"
-								src="	https://d3dq4v2xxejk8c.cloudfront.net/uploads/XmDm72Y3eQcbFkvih_JS.svg"
-								alt="" />
-
-							<p>JavaScript</p>
-						</div>
-					</div>
-
-					<h1 class="big-heading text-4xl font-semibold mb-4">
-						Stellar JavaScript for the React Universe
-					</h1>
-					<p class="course-content">
-						This course is an exciting step towards understanding necessary
-						JavaScript basics and ES6 specifically, which are essential to
-						leverage the power of React. Learn about JavaScript data structures,
-						functions, and new ES6 features to lay a solid foundation for your
-						journey into
-					</p>
-					<div class="flex gap-8">
-						<button class="continue-button">Continue Course</button>
-						<div class="progress-box">
-							<p>Progress: 50%</p>
-							<!-- Circular Progress Placeholder (You may need to use a third-party library or implement your own) -->
+					<div class="right-section">
+						<div
+							class="course-right-box bg-neutral-800 flex gap-4 p-4 rounded-xl">
+							<img class="course-logo w-20" src="./assets/js.png" alt="Logo" />
+							<div>
+								<p
+									class="bg-gray-300 text-black inline-block px-4 rounded-full text-sm mb-2">
+									Intermediate
+								</p>
+								<p>JavaScript Programming and DOM API</p>
+							</div>
 						</div>
 					</div>
 				</div>
+			</div>
 
-				<div class="right-section ">
-					<div
-						class="course-right-box bg-neutral-800 flex gap-4 p-4 rounded-xl">
-						<img class="course-logo w-20" src="./assets/js.png" alt="Logo" />
-						<div>
-							<p
-								class="bg-gray-300 text-black inline-block px-4 rounded-full text-sm mb-2">
-								Intermediate
+			<div class="course-topics bg-blue-950">
+				<div
+					class="course-topics-container flex flex-col max-w-[1084px] m-auto py-40">
+					<div class="lesson-box-container lg:self-center rounded-2xl">
+						<div
+							class="lesson-box-head flex justify-between bg-green-800 px-4 py-3 align-center">
+							<div class="lessons flex gap-3 align-center text-white">
+								<div class="icon flex align-center">
+									<i class="ri-file-2-line"></i>
+								</div>
+								<p class="flex align-center">Lesson 1</p>
+							</div>
+							<img class="w-8 h-8" src="./assets/approved.png" alt="" />
+						</div>
+						<div
+							class="lesson-box-content bg-neutral-1000 px-4 text-center text-white py-4">
+							<p class="pb-4">
+								Unlocking Advanced Arrays and Objects in Javascript: An
+								Introduction to Destructuring, Spread, and Rest Operators
 							</p>
-							<p>JavaScript Programming and DOM API</p>
+							<div class="lesson-box-button flex gap-2 justify-center">
+								<p>Review</p>
+								<img src="./assets/reload.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="max-w-[400px] relative flex flex-col">
+						<svg
+							class="absolute hidden lg:block scale-100 ml-80"
+							xmlns="http://www.w3.org/2000/svg"
+							width="50%"
+							height="96"
+							viewBox="0 0 128 100"
+							fill="none"
+							preserveAspectRatio="none">
+							<path
+								d="M126 2.12159V2.12159C115.974 38.3765 88.8647 67.4445 53.3959 79.9706L2 98.1216"
+								stroke="#168242"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-dasharray="8 8"
+								vector-effect="non-scaling-stroke"></path>
+						</svg>
+					</div>
+
+					<div class="lesson-box-container lg:self-start mt-24 rounded-2xl">
+						<div
+							class="lesson-box-head flex justify-between bg-green-800 px-4 py-3 align-center">
+							<div class="lessons flex gap-3 align-center text-white">
+								<div class="icon flex align-center">
+									<i class="ri-file-2-line"></i>
+								</div>
+								<p class="flex align-center">Lesson 1</p>
+							</div>
+							<img class="w-8 h-8" src="./assets/approved.png" alt="" />
+						</div>
+						<div
+							class="lesson-box-content bg-neutral-1000 px-4 text-center text-white py-4">
+							<p class="pb-4">
+								Unlocking Advanced Arrays and Objects in Javascript: An
+								Introduction to Destructuring, Spread, and Rest Operators
+							</p>
+							<div class="lesson-box-button flex gap-2 justify-center">
+								<p>Review</p>
+								<img src="./assets/reload.png" alt="" />
+							</div>
 						</div>
 					</div>
 				</div>

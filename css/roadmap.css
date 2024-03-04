@@ -10,6 +10,9 @@
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	position: relative;
 	overflow: hidden;
+	outline: 1px solid #036cdb !important;
+	box-shadow: rgba(37, 118, 240, 0.568) 0px 19px 38px,
+		rgba(32, 96, 168, 0.22) 0px 15px 12px;
 
 	background: url(https://t3.ftcdn.net/jpg/07/18/35/84/240_F_718358499_Lu4hqzCIOZ5H0MJ2jZgmm5buOJVDgPDU.jpg);
 
@@ -70,4 +73,38 @@
 .course-right {
 	position: absolute;
 	bottom: 0;
+}
+
+.lesson-box-container {
+	width: 400px;
+	border-radius: 10px;
+	overflow: hidden;
+	border: 8px solid black;
+	outline: 4px solid rgb(55, 197, 55);
+	z-index: 2;
+}
+
+.lesson-box-head {
+	border-radius: 6px 6px 0 0;
+}
+.lesson-box-content {
+	border-radius: 0 0 6px 6px;
+	background-color: #1d263e;
+}
+
+.lesson-box-button {
+	width: 100%;
+	padding: 12px 0;
+	border-radius: 10px;
+	background-color: #202944;
+	border: 1px solid rgb(214, 214, 214);
+}
+
+.lesson-box-button img {
+	width: 22px;
+	filter: invert(100%);
+}
+
+.lesson-box-button:hover {
+	background-color: #2f3c61;
 }
