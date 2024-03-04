@@ -16,32 +16,10 @@
 
 		<script src="https://cdn.tailwindcss.com"></script>
 		<title>Document</title>
-
-		<style>
-			.right-section {
-				display: flex;
-				flex-direction: column;
-				align-items: flex-end;
-			}
-
-			.small-box {
-				background-color: #007bff;
-				color: #fff;
-				padding: 10px;
-				border-radius: 5px;
-				text-align: right;
-			}
-
-			.logo {
-				width: 40px;
-				height: 40px;
-				margin-right: 10px;
-			}
-		</style>
 	</head>
 	<body>
 		<div class="course-item">
-			<div class="course-box pt-16 px-5 bg-blue-950 min-h-screen">
+			<div class="course-box pt-4 px-5">
 				<div class="course-box-container">
 					<div class="gradient-top"></div>
 					<div class="left-section">
@@ -97,7 +75,7 @@
 						</div>
 					</div>
 
-					<div class="right-section">
+					<div class="right-section flex flex-col self-end">
 						<div
 							class="course-right-box bg-neutral-800 flex gap-4 p-4 rounded-xl">
 							<img class="course-logo w-20" src="./assets/js.png" alt="Logo" />
@@ -113,9 +91,9 @@
 				</div>
 			</div>
 
-			<div class="course-topics bg-blue-950">
+			<div class="course-topics">
 				<div
-					class="course-topics-container flex flex-col max-w-[1084px] m-auto py-40">
+					class="course-topics-container flex flex-col max-w-[1084px] m-auto py-20">
 					<div class="lesson-box-container lg:self-center rounded-2xl">
 						<div
 							class="lesson-box-head flex justify-between bg-green-800 px-4 py-3 align-center">
@@ -128,7 +106,7 @@
 							<img class="w-8 h-8" src="./assets/approved.png" alt="" />
 						</div>
 						<div
-							class="lesson-box-content bg-neutral-1000 px-4 text-center text-white py-4">
+							class="lesson-box-content flex flex-col justify-between bg-neutral-1000 px-4 text-center text-white py-4">
 							<p class="pb-4">
 								Unlocking Advanced Arrays and Objects in Javascript: An
 								Introduction to Destructuring, Spread, and Rest Operators
@@ -158,26 +136,252 @@
 						</svg>
 					</div>
 
-					<div class="lesson-box-container lg:self-start mt-24 rounded-2xl">
+					<div
+						class="lesson-box-container start-lesson bg-neutral-1000 lg:self-start mt-24 rounded-2xl">
 						<div
-							class="lesson-box-head flex justify-between bg-green-800 px-4 py-3 align-center">
+							class="lesson-box-head flex justify-between px-4 py-3 align-center">
 							<div class="lessons flex gap-3 align-center text-white">
 								<div class="icon flex align-center">
-									<i class="ri-file-2-line"></i>
+									<i class="ri-code-box-line"></i>
 								</div>
-								<p class="flex align-center">Lesson 1</p>
+								<p class="flex align-center">Practice 1</p>
 							</div>
-							<img class="w-8 h-8" src="./assets/approved.png" alt="" />
 						</div>
 						<div
-							class="lesson-box-content bg-neutral-1000 px-4 text-center text-white py-4">
+							class="lesson-box-content flex flex-col justify-between px-4 text-center text-white py-4">
 							<p class="pb-4">
-								Unlocking Advanced Arrays and Objects in Javascript: An
-								Introduction to Destructuring, Spread, and Rest Operators
+								Color Change with ES6 Destructuring and Spread Operator
 							</p>
 							<div class="lesson-box-button flex gap-2 justify-center">
-								<p>Review</p>
+								<p>Start +60 EP</p>
 								<img src="./assets/reload.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="max-w-[400px] relative flex flex-col">
+						<svg
+							class="absolute hidden lg:block left-1/2 -scale-x-100 scale-y-100"
+							xmlns="http://www.w3.org/2000/svg"
+							width="50%"
+							height="96"
+							viewBox="0 0 128 100"
+							fill="none"
+							preserveAspectRatio="none">
+							<path
+								d="M126 2.12159V2.12159C115.974 38.3765 88.8647 67.4445 53.3959 79.9706L2 98.1216"
+								stroke="white"
+								stroke-opacity="0.2"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-dasharray="8 8"
+								vector-effect="non-scaling-stroke"></path>
+						</svg>
+					</div>
+
+					<div
+						class="lesson-box-container locked bg-neutral-1000 lg:self-center mt-24 rounded-2xl">
+						<div
+							class="lesson-box-head flex justify-between px-4 py-3 align-center">
+							<div class="lessons flex gap-3 align-center text-white">
+								<div class="icon flex align-center">
+									<i class="ri-code-box-line"></i>
+								</div>
+								<p class="flex align-center">Practice 2</p>
+							</div>
+						</div>
+						<div
+							class="lesson-box-content flex flex-col justify-between bg-neutral-1000 px-4 text-center text-white py-4">
+							<p class="pb-4">Supersonic Speed Upgrade</p>
+							<div class="lesson-box-button flex gap-2 justify-center">
+								<img src="./assets/lock.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="max-w-[400px] relative flex flex-col">
+						<svg
+							class="absolute hidden lg:block ml-80 left-1/2 -scale-x-100 scale-y-100"
+							xmlns="http://www.w3.org/2000/svg"
+							width="50%"
+							height="96"
+							viewBox="0 0 128 100"
+							fill="none"
+							preserveAspectRatio="none">
+							<path
+								d="M126 2.12159V2.12159C115.974 38.3765 88.8647 67.4445 53.3959 79.9706L2 98.1216"
+								stroke="white"
+								stroke-opacity="0.2"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-dasharray="8 8"
+								vector-effect="non-scaling-stroke"></path>
+						</svg>
+					</div>
+
+					<div
+						class="lesson-box-container locked bg-neutral-1000 lg:self-end mt-24 rounded-2xl">
+						<div
+							class="lesson-box-head flex justify-between px-4 py-3 align-center">
+							<div class="lessons flex gap-3 align-center text-white">
+								<div class="icon flex align-center">
+									<i class="ri-code-box-line"></i>
+								</div>
+								<p class="flex align-center">Practice 2</p>
+							</div>
+						</div>
+						<div
+							class="lesson-box-content flex flex-col justify-between bg-neutral-1000 px-4 text-center text-white py-4">
+							<p class="pb-4">Supersonic Speed Upgrade</p>
+							<div class="lesson-box-button flex gap-2 justify-center">
+								<img src="./assets/lock.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="max-w-[400px] relative flex flex-col">
+						<svg
+							class="absolute hidden lg:block ml-[600px] scale-100"
+							xmlns="http://www.w3.org/2000/svg"
+							width="50%"
+							height="96"
+							viewBox="0 0 128 100"
+							fill="none"
+							preserveAspectRatio="none">
+							<path
+								d="M126 2.12159V2.12159C115.974 38.3765 88.8647 67.4445 53.3959 79.9706L2 98.1216"
+								stroke="white"
+								stroke-opacity="0.2"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-dasharray="8 8"
+								vector-effect="non-scaling-stroke"></path>
+						</svg>
+					</div>
+
+					<div
+						class="lesson-box-container locked bg-neutral-1000 lg:self-center mt-24 rounded-2xl">
+						<div
+							class="lesson-box-head flex justify-between px-4 py-3 align-center">
+							<div class="lessons flex gap-3 align-center text-white">
+								<div class="icon flex align-center">
+									<i class="ri-code-box-line"></i>
+								</div>
+								<p class="flex align-center">Practice 2</p>
+							</div>
+						</div>
+						<div
+							class="lesson-box-content flex flex-col justify-between bg-neutral-1000 px-4 text-center text-white py-4">
+							<p class="pb-4">Supersonic Speed Upgrade</p>
+							<div class="lesson-box-button flex gap-2 justify-center">
+								<img src="./assets/lock.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="max-w-[400px] relative flex flex-col">
+						<svg
+							class="absolute hidden lg:block ml-60 scale-100"
+							xmlns="http://www.w3.org/2000/svg"
+							width="50%"
+							height="96"
+							viewBox="0 0 128 100"
+							fill="none"
+							preserveAspectRatio="none">
+							<path
+								d="M126 2.12159V2.12159C115.974 38.3765 88.8647 67.4445 53.3959 79.9706L2 98.1216"
+								stroke="white"
+								stroke-opacity="0.2"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-dasharray="8 8"
+								vector-effect="non-scaling-stroke"></path>
+						</svg>
+					</div>
+
+					<div
+						class="lesson-box-container locked bg-neutral-1000 lg:self-start mt-24 rounded-2xl">
+						<div
+							class="lesson-box-head flex justify-between px-4 py-3 align-center">
+							<div class="lessons flex gap-3 align-center text-white">
+								<div class="icon flex align-center">
+									<i class="ri-code-box-line"></i>
+								</div>
+								<p class="flex align-center">Practice 2</p>
+							</div>
+						</div>
+						<div
+							class="lesson-box-content flex flex-col justify-between bg-neutral-1000 px-4 text-center text-white py-4">
+							<p class="pb-4">Supersonic Speed Upgrade</p>
+							<div class="lesson-box-button flex gap-2 justify-center">
+								<img src="./assets/lock.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="course-box locked-course pt-4 px-5">
+				<div class="course-box-container course-box-react">
+					<div class="locked-icon">
+						<img src="./assets/lock.png" alt="" />
+					</div>
+					<div class="gradient-top"></div>
+					<div class="left-section">
+						<div class="top-left flex gap-16 mb-20">
+							<div class="lessons flex gap-3 align-center">
+								<div class="icon">
+									<i class="ri-file-2-line"></i>
+								</div>
+								<p>23 lessons</p>
+							</div>
+							<div class="practice flex gap-3 align-center">
+								<div class="practice-icon">
+									<i class="ri-code-box-line"></i>
+								</div>
+								<p>33 practices</p>
+							</div>
+						</div>
+						<div class="course-language flex gap-8 mb-6">
+							<div class="subtitle flex gap-1">
+								<img
+									class="w-4"
+									src="https://d3dq4v2xxejk8c.cloudfront.net/uploads/SkPf73mCwpi4P6DCP_html.svg"
+									alt="" />
+
+								<p>HTML</p>
+							</div>
+							<div class="subtitle flex gap-1">
+								<img
+									class="w-4"
+									src="	https://d3dq4v2xxejk8c.cloudfront.net/uploads/XmDm72Y3eQcbFkvih_JS.svg"
+									alt="" />
+
+								<p>JavaScript</p>
+							</div>
+						</div>
+
+						<h1 class="big-heading text-4xl font-semibold mb-4">
+							Cosmic connection with APIs in React
+						</h1>
+						<p class="course-content">
+							This course is an exciting step towards understanding necessary
+							JavaScript basics and ES6 specifically, which are essential to
+							leverage the power of React. Learn about JavaScript data
+							structures, functions, and new ES6 features to lay a solid
+							foundation for your journey into
+						</p>
+						<div class="flex gap-8">
+							<button class="continue-button">Jump here</button>
+						</div>
+					</div>
+
+					<div class="right-section flex flex-col self-end">
+						<div
+							class="course-right-box bg-neutral-800 flex gap-4 p-4 rounded-xl">
+							<img class="course-logo w-20" src="./assets/js.png" alt="Logo" />
+							<div>
+								<p
+									class="bg-gray-300 text-black inline-block px-4 rounded-full text-sm mb-2">
+									Intermediate
+								</p>
+								<p>JavaScript Programming and DOM API</p>
 							</div>
 						</div>
 					</div>

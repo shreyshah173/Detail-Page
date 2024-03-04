@@ -1,3 +1,8 @@
+.course-item {
+	background-color: #101523;
+	padding: 3rem 1.2rem;
+}
+
 .course-box-container {
 	display: flex;
 	justify-content: space-between;
@@ -10,7 +15,7 @@
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	position: relative;
 	overflow: hidden;
-	outline: 1px solid #036cdb !important;
+	outline: 1px solid #036cdb ;
 	box-shadow: rgba(37, 118, 240, 0.568) 0px 19px 38px,
 		rgba(32, 96, 168, 0.22) 0px 15px 12px;
 
@@ -75,6 +80,8 @@
 	bottom: 0;
 }
 
+/* lesson box */
+
 .lesson-box-container {
 	width: 400px;
 	border-radius: 10px;
@@ -82,6 +89,7 @@
 	border: 8px solid black;
 	outline: 4px solid rgb(55, 197, 55);
 	z-index: 2;
+	background-color: #1d263e;
 }
 
 .lesson-box-head {
@@ -90,6 +98,7 @@
 .lesson-box-content {
 	border-radius: 0 0 6px 6px;
 	background-color: #1d263e;
+	min-height: 160px;
 }
 
 .lesson-box-button {
@@ -98,6 +107,7 @@
 	border-radius: 10px;
 	background-color: #202944;
 	border: 1px solid rgb(214, 214, 214);
+	bottom: 20px;
 }
 
 .lesson-box-button img {
@@ -107,4 +117,62 @@
 
 .lesson-box-button:hover {
 	background-color: #2f3c61;
+}
+
+.start-lesson {
+	border: 8px solid #161c30;
+	outline: 4px solid rgb(16 98 251);
+	box-shadow: rgba(37, 118, 240, 0.568) 0px 19px 38px,
+		rgba(32, 96, 168, 0.22) 0px 15px 12px;
+}
+
+.start-lesson .lesson-box-head {
+	background-color: #1d263e;
+}
+
+.start-lesson .lesson-box-button {
+	background-color: rgb(16 98 251);
+	border: none;
+}
+
+.locked {
+	color: rgb(141, 141, 141);
+	border: #1d263e;
+	outline: #1d263e;
+	box-shadow: rgba(0, 0, 0, 0.568) 0px 19px 38px,
+		rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.locked .lesson-box-content p {
+	font-size: 1.2rem;
+}
+
+/* images */
+
+.course-box-react {
+	background: url(https://img.freepik.com/free-vector/alien-planet-landscape-night_107791-25044.jpg?t=st=1709575767~exp=1709579367~hmac=b5083325ed0cc2b9a8b236d867e621331cd5db95a31d7e20435a3a8378ba88ea&w=826);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.locked-course {
+	color: rgb(126, 126, 126);
+	outline: none;
+}
+
+.locked-course .course-box-container {
+	outline: none;
+}
+
+.locked-icon {
+	position: absolute;
+	z-index: 4;
+	right: 30px;
+	top: 30px;
+}
+
+.locked-icon img {
+	filter: invert(100%);
+	width: 30px;
 }
