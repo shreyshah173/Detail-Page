@@ -1,5 +1,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
+/* career section */
+
+.career {
+	padding: 3rem;
+	background-color: rgb(49, 56, 87);
+}
+
+.career-container {
+	background-color: #101523;
+	color: white;
+	max-width: 1200px;
+	margin: auto;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	padding-left: 5rem;
+	padding-right: 2rem;
+	display: flex;
+	gap: 20px;
+}
+
+.career-head {
+	display: flex;
+	gap: 20px;
+	padding: 10px;
+}
+
+.career-heading {
+	font-size: 2.4rem;
+	margin-bottom: 2rem;
+	font-weight: 600;
+}
+
+.career-content {
+	margin-bottom: 2rem;
+	font-size: 0.9rem;
+}
+
+p {
+	display: flex;
+	align-items: center;
+}
+
+.career-t1 {
+	background-color: #ffc700;
+	border-radius: 1rem;
+	color: black;
+	padding: 5px 15px;
+}
+
+.career-t2 {
+	background-color: #0000fd;
+	border-radius: 1rem;
+	padding: 5px 15px;
+}
+
+.career-buttons {
+	display: flex;
+	gap: 20px;
+}
+
+.career-join,
+.career-view,
+.career-know {
+	padding: 8px 15px;
+	background-color: #0000fd;
+	border-radius: 0.5rem;
+	width: 200px;
+	text-align: center;
+}
+
+.career-view,
+.career-know {
+	background-color: #2d3855;
+}
+
+.career-row2 {
+	min-width: 320px;
+	padding: 20px;
+}
+
+.blank {
+	background-color: white;
+	width: 100%;
+	height: 100px;
+	margin-bottom: 2rem;
+}
+
+/* hero section */
 .hero-section {
 	background-color: rgb(49, 56, 87);
 	padding-bottom: 3rem;
@@ -70,20 +158,11 @@
 	height: 50px;
 	border-radius: 50%;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.4rem;
+	padding-top: 0.5rem;
 	background: #4f537b;
 }
-.timeline .timeline-container .timeline-icon i {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}
-.timeline .timeline-container .timeline-icon img {
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-}
+
 .timeline .timeline-container {
 	/* background: #27293d; */
 	border-radius: 3px;
@@ -143,26 +222,6 @@
 	opacity: 0.4;
 	margin-top: 16px;
 	font-size: 11px;
-}
-.timeline .timeline-container.primary .badge,
-.timeline .timeline-container.primary .timeline-icon {
-	background: #1768b9 !important;
-}
-.timeline .timeline-container.info .badge,
-.timeline .timeline-container.info .timeline-icon {
-	background: #0e8da3 !important;
-}
-.timeline .timeline-container.success .badge,
-.timeline .timeline-container.success .timeline-icon {
-	background: #02725c !important;
-}
-.timeline .timeline-container.warning .badge,
-.timeline .timeline-container.warning .timeline-icon {
-	background: #1b257c !important;
-}
-.timeline .timeline-container.danger .badge,
-.timeline .timeline-container.danger .timeline-icon {
-	background: #923353 !important;
 }
 
 .author {
