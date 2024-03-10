@@ -4,7 +4,10 @@
 
 .career,
 .about,
-.trusted {
+.trusted,
+.ready,
+.feedback,
+.similar {
 	padding: 3rem 20px;
 	background-color: rgb(49, 56, 87);
 }
@@ -625,4 +628,158 @@ p {
 	background-color: white;
 	min-width: 200px;
 	height: 200px;
+}
+
+/* ready section */
+
+.ready-container {
+	background: #101523;
+	max-width: 1200px;
+	color: white;
+	margin: auto;
+	padding: 20px;
+}
+
+.ready-heading {
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+	margin-top: 1rem;
+}
+
+.ready-card-container {
+	display: flex;
+	gap: 20px;
+	justify-content: space-evenly;
+	margin-bottom: 3rem;
+}
+
+.ready-card {
+	background: #2d3855;
+	padding: 8px 10px;
+	min-width: 16%;
+	text-align: center;
+}
+
+/* ========== feedback ======== */
+
+.feedback-container {
+	max-width: 1200px;
+	margin: auto;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	padding: 2.6rem 5rem;
+}
+
+.feedback-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+	gap: 20px;
+}
+
+.feedback-item {
+	padding: 14px 28px;
+	background-color: rgb(102, 33, 119);
+	color: rgb(219, 219, 219);
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.fi-head {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	margin-bottom: 2.4rem;
+}
+
+.fi-head img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid rgb(236, 236, 236);
+}
+
+.fi-desc h4 {
+	font-weight: 500;
+}
+
+.fi-desc p {
+	font-size: 0.8rem;
+	color: rgb(194, 194, 194);
+}
+
+.feedback-heading {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.feedback-content {
+	font-size: 0.8rem;
+	color: rgb(189, 189, 189);
+}
+
+.fi1 {
+	grid-column: 1 / 3;
+	grid-row: 1/2;
+}
+
+.fi2 {
+	grid-column: 3 / 4;
+	background-color: rgb(70, 70, 70);
+}
+.fi3 {
+	grid-column: 4 / 5;
+	grid-row: 1/3;
+	background-color: white;
+	color: black !important;
+}
+.fi3 .feedback-content {
+	color: black !important;
+}
+
+.fi4 {
+	grid-column: 1 / 2;
+	background-color: white;
+	color: black !important;
+}
+.fi4 .feedback-content {
+	color: black !important;
+}
+
+.fi5 {
+	grid-column: 2 / 4;
+	background-color: black;
+}
+
+/* ===== similar path section ===== */
+.similar-container {
+	max-width: 1200px;
+	margin: auto;
+	color: white;
+	padding: 3rem 0;
+}
+
+.similar-card-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.similar-heading {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 2rem;
+}
+
+.similar-card {
+	width: 30%;
+	height: 400px;
+	background-color: white;
 }
