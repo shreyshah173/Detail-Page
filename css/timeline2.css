@@ -2,8 +2,10 @@
 
 /* career section */
 
-.career {
-	padding: 3rem;
+.career,
+.about,
+.trusted {
+	padding: 3rem 20px;
 	background-color: rgb(49, 56, 87);
 }
 
@@ -83,8 +85,32 @@ p {
 .blank {
 	background-color: white;
 	width: 100%;
-	height: 100px;
-	margin-bottom: 2rem;
+	height: 80px;
+	margin-bottom: 1rem;
+}
+
+.career-logo-container {
+	width: 100%;
+	background-color: white;
+	padding: 20px;
+}
+
+.career-logos {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin-bottom: 1rem;
+}
+
+.career-logos img {
+	width: 70px;
+}
+.career-logo-container h4 {
+	color: black;
+	text-align: center !important;
+	font-weight: 600;
+	text-decoration: underline;
 }
 
 /* hero section */
@@ -521,4 +547,82 @@ p {
 	.timeline-lessons {
 		gap: 10px;
 	}
+}
+
+/* ====== about section ==========  */
+
+.about-container {
+	color: white;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.about-heading,
+.trusted-heading {
+	margin-bottom: 3rem;
+	font-size: 1.8rem;
+}
+
+.about-row1 {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.about-card {
+	width: 30%;
+	min-width: 300px;
+	background-color: #101523;
+	padding: 20px;
+}
+
+.about-card p {
+	font-size: 0.7rem;
+}
+
+.about-card h1 {
+	font-size: 2rem;
+	margin: 0.8rem 0;
+}
+
+.about-buttons {
+	display: flex;
+	justify-content: start;
+	gap: 30px;
+	margin-top: 1rem;
+	font-size: 0.8rem;
+}
+
+.about-viewbtn {
+	background-color: #2d3855;
+	padding: 7px 15px;
+}
+
+.about-enrollbtn {
+	background-color: #0000fd;
+	padding: 7px 15px;
+	width: 100px;
+}
+
+/* ===== trusted section ====== */
+
+.trusted-container {
+	color: white;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.trusted-card-container {
+	display: flex;
+	gap: 2rem;
+	overflow: scroll;
+}
+.trusted-card-container::-webkit-scrollbar {
+	display: none;
+}
+.trusted-card {
+	background-color: white;
+	min-width: 200px;
+	height: 200px;
 }
