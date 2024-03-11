@@ -71,8 +71,10 @@ p {
 	padding: 8px 15px;
 	background-color: #0000fd;
 	border-radius: 0.5rem;
-	width: 200px;
-	text-align: center;
+	width: 28%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .career-view,
@@ -114,6 +116,39 @@ p {
 	text-align: center !important;
 	font-weight: 600;
 	text-decoration: underline;
+}
+
+@media (max-width: 1075px) {
+	.career-container {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 750px) {
+	.career-container {
+		padding: 20px;
+	}
+
+	.career-heading {
+		font-size: 1.6rem;
+	}
+	.career-head p {
+		font-size: 0.5rem;
+	}
+
+	.career-content {
+		font-size: 0.7rem;
+	}
+
+	.career-buttons {
+		font-size: 0.7rem;
+	}
+
+	.career-join,
+	.career-view,
+	.career-know {
+		width: max-content;
+	}
 }
 
 /* hero section */
@@ -652,6 +687,7 @@ p {
 	gap: 20px;
 	justify-content: space-evenly;
 	margin-bottom: 3rem;
+	flex-wrap: wrap;
 }
 
 .ready-card {
@@ -659,6 +695,12 @@ p {
 	padding: 8px 10px;
 	min-width: 16%;
 	text-align: center;
+}
+
+@media (max-width: 1024px) {
+	.ready-heading {
+		font-size: 2rem;
+	}
 }
 
 /* ========== feedback ======== */
@@ -756,6 +798,48 @@ p {
 .fi5 {
 	grid-column: 2 / 4;
 	background-color: black;
+}
+
+@media (max-width: 1024px) {
+	.feedback-grid {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+	.fi3 {
+		grid-column: 1/4;
+		grid-row: 3/4;
+	}
+
+	.feedback-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.fi-head {
+		margin-bottom: 1rem;
+	}
+}
+
+@media (max-width: 750px) {
+	.fi-desc h4,
+	.fi-desc p {
+		font-size: 0.6rem;
+	}
+
+	.feedback-item {
+		padding: 15px;
+	}
+
+	.feedback-heading {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 650px) {
+	.feedback-grid {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 /* ===== similar path section ===== */
