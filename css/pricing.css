@@ -1,0 +1,153 @@
+.hero {
+	padding: 10rem 20px;
+}
+
+.hero-container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.hero h1 {
+	font-size: 2.8rem;
+	font-weight: 600;
+	line-height: 2.5rem;
+	text-align: center;
+	color: black;
+}
+
+.hero-head {
+	color: #c4c4c4 !important;
+}
+
+.hero-flex {
+	display: flex;
+	gap: 25px;
+	justify-content: center;
+	margin-top: 3rem;
+	cursor: pointer;
+}
+
+.hero-flex p {
+	font-weight: 500;
+	font-size: 1.1rem;
+	display: flex;
+	align-items: center;
+}
+
+.hero-toggle {
+	width: 70px;
+	background-color: #5f5f5f;
+	height: 40px;
+	border-radius: 2rem;
+	display: flex;
+	align-items: center;
+	padding: 4px;
+}
+
+.hero-toggle-ball {
+	width: 32px;
+	height: 32px;
+	background-color: white;
+	border-radius: 50%;
+	padding-left: 4px;
+}
+
+/* ======= plan section ========== */
+
+.plan {
+	padding: 2rem 20px;
+}
+
+.plan-container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.plan-flex {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-basis: 25%;
+}
+
+.plan-item {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	padding: 30px;
+	min-width: 22%;
+}
+
+.plan-item h5 {
+	font-size: 1rem;
+	font-weight: 600;
+	padding-top: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+.plan-item h2 {
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.plan-item span {
+	font-size: 2.4rem;
+}
+
+.plan-save {
+	color: rgb(0, 89, 255);
+	margin-top: -0.5rem;
+	margin-bottom: 2rem;
+}
+
+.plan-content {
+	font-size: 0.8rem;
+	margin-bottom: 0.8rem;
+	line-height: 1.4rem;
+}
+
+.plan-button {
+	background-color: black;
+	color: white;
+	height: 50px;
+	margin-top: 0.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1.5rem;
+}
+
+.plan-feature-heading {
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: #5f5f5f;
+	margin-bottom: 0.4rem;
+}
+
+.plan-features {
+	display: flex;
+	flex-direction: column;
+}
+
+.plan-feature-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 0;
+	border-bottom: 0.5px solid rgb(194, 194, 194);
+}
+
+.plan-feature-icon {
+	width: 20px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.plan-feature-flex {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+.plan-feature-flex h4 {
+	color: rgb(41, 41, 41);
+	font-weight: 500;
+}

@@ -134,6 +134,11 @@ p {
 	}
 	.career-head p {
 		font-size: 0.5rem;
+		width: max-content;
+	}
+
+	.career-head{
+		gap: 12px;
 	}
 
 	.career-content {
@@ -142,6 +147,7 @@ p {
 
 	.career-buttons {
 		font-size: 0.7rem;
+		gap: 12px;
 	}
 
 	.career-join,
