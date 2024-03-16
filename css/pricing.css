@@ -151,3 +151,106 @@
 	color: rgb(41, 41, 41);
 	font-weight: 500;
 }
+
+.plan-compare {
+	margin-top: 1.5rem;
+	display: flex;
+	gap: 1.4rem;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.plan-compare img {
+	width: 15px;
+	height: 15px;
+	transform: rotate(90deg);
+}
+
+.plan-compare p {
+	font-weight: 500;
+}
+
+.plan-compare p:hover {
+	text-decoration: underline;
+}
+
+/* ======= reate section ====== */
+
+.rate {
+	padding: 5rem 20px;
+	background-color: #05192d;
+	color: white;
+}
+
+.rate-container {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	gap: 20px;
+}
+
+.rate-item {
+	max-width: 320px;
+}
+
+.rate-item h2 {
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+
+.rate-item h4 {
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+/* princing table */
+
+.table {
+	background-color: #fffbf3;
+	position: relative;
+}
+.table-container {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 6rem 1.2rem;
+}
+
+@media screen and (min-width: 1200px) {
+	.table-container {
+		display: block;
+	}
+}
+
+.table table {
+	display: table;
+	border-spacing: 2px;
+	border-color: gray;
+}
+
+
+.table tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+.price-table {
+	border-collapse: separate;
+	width: 100%;
+}
+
+.table-heading {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 10px;
+	z-index: 20;
+}
+
+.table-heading th:nth-of-type(1) {
+    border-color: transparent;
+    text-align: left;
+    vertical-align: bottom;
+}
