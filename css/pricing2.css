@@ -1,0 +1,177 @@
+body {
+	background-color: #f1f1f1;
+}
+
+.page-heading {
+	margin-top: 4rem;
+	padding: 0 20px;
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 0.8rem;
+}
+
+.page-title {
+	margin-bottom: 3rem;
+	padding: 0 20px;
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.price {
+	padding: 3rem 20px;
+}
+
+.price-container {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.price-item {
+	max-width: 31%;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.price-heading {
+	background-color: #4a154b;
+	color: white;
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	min-height: 220px;
+}
+
+.price-text-flex p {
+	font-size: 0.9rem;
+}
+
+.price-heading img {
+	width: 6rem;
+	height: 6rem;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.price-content {
+	padding: 30px;
+	background-color: white;
+}
+
+.price-amount {
+	color: green;
+	font-size: 1.8rem;
+}
+
+.price-desc {
+	font-size: 0.7rem;
+	color: rgb(95, 95, 95);
+	margin-bottom: 4rem;
+}
+
+.price-feature-heading {
+	font-weight: 600;
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.price li {
+	list-style-type: none;
+	display: flex;
+	gap: 10px;
+	margin-bottom: 0.4rem;
+}
+
+.price ul {
+	margin-bottom: 6rem;
+}
+
+.price li img {
+	width: 18px;
+	height: 18px;
+	filter: saturate(100%);
+	display: flex;
+	align-items: center;
+}
+
+.price li p {
+	font-size: 0.9rem;
+}
+
+.price-button {
+	background-color: rgb(4, 109, 4);
+	color: white;
+	text-align: center;
+	padding: 1rem 0;
+	border-radius: 3px;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+/* reacp section */
+
+.recap {
+	padding: 3rem 20px;
+}
+
+.recap-container {
+	max-width: 1200px;
+	margin: auto;
+	border-radius: 18px;
+	background-color: rgb(238, 228, 213);
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.recap-row1 {
+	padding: 30px;
+}
+
+.recap h1 {
+	font-size: 1.8rem;
+}
+
+.recap-features {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.recap-features li {
+	display: flex;
+	gap: 10px;
+	font-size: 0.9rem;
+	align-items: center;
+	margin-bottom: 0.6rem;
+}
+
+.recap-features img {
+	width: 14px;
+	height: 14px;
+}
+
+.recap-features span {
+	font-weight: 600;
+}
+
+.recap-row2 {
+	max-width: 320px;
+}
+
+.recap-row2 img {
+	mix-blend-mode: multiply;
+	width: 100%;
+}
+
+.recap-button {
+	background-color: green;
+	color: white;
+	padding: 0.5rem 1rem;
+	width: max-content;
+	border-radius: 5px;
+}

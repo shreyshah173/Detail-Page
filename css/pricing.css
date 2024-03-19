@@ -59,7 +59,7 @@
 		font-size: 2.2rem;
 	}
 
-	.hero-flex{
+	.hero-flex {
 		gap: 15px;
 	}
 }
@@ -264,15 +264,10 @@
 	border-color: gray;
 }
 
-.table tr {
-	display: table-row;
-	vertical-align: inherit;
-	border-color: inherit;
-}
-
-.price-table {
-	border-collapse: collapse;
+.table table {
+	/* border-collapse: separate; */
 	width: 100%;
+	border-spacing: 0;
 }
 
 .table-heading {
