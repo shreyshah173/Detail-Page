@@ -175,3 +175,20 @@ body {
 	width: max-content;
 	border-radius: 5px;
 }
+
+/* faq section */
+
+.faq {
+	padding: 3rem 20px;
+}
+
+.faq-container {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.faq h1 {
+	text-align: center;
+	font-size: 2.4rem;
+	margin-bottom: 4rem;
+}
