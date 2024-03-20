@@ -233,23 +233,96 @@
 						</p>
 					</div>
 				</div>
+				<div class="faq-item">
+					<div class="faq-question">
+						<p>
+							Can I upgrade Slack just for myself, instead of upgrading everyone
+							in our workspace?
+						</p>
+						<img src="assets/plus.png" alt="" />
+					</div>
+					<div class="faq-answer">
+						<p>
+							Unfortunately, no. Slack is built for teams, so you’ll get the
+							most out of paid slack when you all use it together. To upgrade
+							Slack, you’ll need to upgrade your entire workspace at once.
+						</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">
+						<p>
+							Can I upgrade Slack just for myself, instead of upgrading everyone
+							in our workspace?
+						</p>
+						<img src="assets/plus.png" alt="" />
+					</div>
+					<div class="faq-answer">
+						<p>
+							Unfortunately, no. Slack is built for teams, so you’ll get the
+							most out of paid slack when you all use it together. To upgrade
+							Slack, you’ll need to upgrade your entire workspace at once.
+						</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">
+						<p>
+							Can I upgrade Slack just for myself, instead of upgrading everyone
+							in our workspace?
+						</p>
+						<img src="assets/plus.png" alt="" />
+					</div>
+					<div class="faq-answer">
+						<p>
+							Unfortunately, no. Slack is built for teams, so you’ll get the
+							most out of paid slack when you all use it together. To upgrade
+							Slack, you’ll need to upgrade your entire workspace at once.
+						</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">
+						<p>
+							What are my payment options? Can I pay by credit card? Can you
+							invoice me?
+						</p>
+						<img src="assets/plus.png" alt="" />
+					</div>
+					<div class="faq-answer">
+						<p>
+							You can use your credit card for any plan, and can now pay in
+							Indian rupees (as well as other local currencies around the
+							globe). If you sign up for an annual subscription and plan to
+							spend at least $5,000 (USD), we can invoice you annually in select
+							currencies (GBP, EUR, JPY or USD). Visit the help center or
+							contact us to start the process.
+						</p>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<section class="security">
 			<div class="security-container">
-				<h1></h1>
-				<p></p>
-				<a href=""></a>
+				<h1>Techsnap leads the way in Enterprise security</h1>
+				<p>In addition to data encryption in transit and at rest, we operate comprehensive compliance and assurance </p>
+				<a class="security-learn" href="#">Learn how Slack keeps data secure</a>
 				<div class="security-logos">
-					<img src="" alt="" />
+					<img src="	https://a.slack-edge.com/bv1-12/logo_fedramp-9fda6d3.png" alt="" />
+					<img src="	https://a.slack-edge.com/bv1-12/logo_fedramp-9fda6d3.png" alt="" />
+					<img src="	https://a.slack-edge.com/bv1-12/logo_iso-27001-48c5cfb.png" alt="" />
+					<img src="	https://a.slack-edge.com/bv1-12/logo_iso-27001-48c5cfb.png" alt="" />
+					<img src="	https://a.slack-edge.com/bv1-12/logo_fedramp-9fda6d3.png" alt="" />
+					<img src="	https://a.slack-edge.com/bv1-12/logo_fedramp-9fda6d3.png" alt="" />
+					<img src="	https://a.slack-edge.com/bv1-12/logo_fedramp-9fda6d3.png" alt="" />
 				</div>
 			</div>
 		</section>
 
 		<section class="trust">
 			<div class="trust-container">
-				<h1></h1>
+				<h1>Thousands of customers use Slack as their productivity platform</h1>
 				<div class="trust-logos">
 					<img src="" alt="" />
 				</div>
@@ -259,6 +332,28 @@
 		</section>
 
 		<a class="backtotop-btn" href="#page-heading">Back to top</a>
-    <p class="more-question">More questions? Let us help.Contact us</p>
+		<p class="more-question">More questions? Let us help.Contact us</p>
 	</body>
+
+	<script>
+		// faq section
+		const faqContents = document.querySelectorAll(".faq-item");
+
+		faqContents.forEach((faqContent) => {
+			const plusImg = faqContent.querySelector("img");
+			plusImg.addEventListener("click", () => {
+				// Toggle visibility of faq-answer
+				const faqAnswer = faqContent.querySelector(".faq-answer");
+				faqAnswer.classList.toggle("show");
+
+				if (faqAnswer.classList.contains("show")) {
+					plusImg.src = "./assets/minus.png"; // Change to minus image
+					plusImg.style.transform = "rotate(180deg)";
+				} else {
+					plusImg.src = "./assets/plus.png"; // Change to plus image
+					plusImg.style.transform = "rotate(0deg)";
+				}
+			});
+		});
+	</script>
 </html>
