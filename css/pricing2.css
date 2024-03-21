@@ -15,7 +15,7 @@ body {
 	padding: 0 20px;
 	text-align: center;
 	font-size: 1.3rem;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .price {
@@ -278,31 +278,23 @@ body {
 	line-height: 1.46668;
 	font-weight: initial;
 	opacity: 0;
-	height: 36px;
+	height: 40px;
 	padding-left: 11px;
 	padding-right: 11px;
-	font-weight: 700;
+	font-weight: 600;
 	transition: none;
 	display: inline-block;
 }
+
 .p-upgrade_cta--current_plan {
 	color: #868686;
 	text-align: center;
-	white-space: nowrap;
 	border: 1px solid #ddd;
 	border-radius: 4px;
 	justify-content: center;
 	align-items: center;
-	font-weight: 700;
 	display: inline-flex;
 }
-.p-upgrade_cta {
-	width: 100%;
-	height: 100%;
-	padding: 16px 0;
-	font-size: 18px;
-}
-
 .p-sticky_header_banner .p-sticky_header_button_wrapper {
 	height: 0;
 	overflow: hidden;
@@ -333,25 +325,24 @@ body {
 .p-sticky_header_banner .p-upgrade_cta {
 	font-size: 15px;
 	line-height: 1.46668;
-	font-weight: initial;
 	opacity: 0;
-	height: 36px;
 	padding-left: 11px;
 	padding-right: 11px;
-	font-weight: 700;
 	transition: none;
 	display: inline-block;
 }
 
 .p-upgrade_cta {
 	width: 100%;
-	height: 100%;
+	height: 40px;
 	padding: 16px 0;
 	font-size: 18px;
+	font-weight: 600;
+	margin-top: 0.5rem;
 }
 .c-button--medium {
 	min-width: 80px;
-	height: 36px;
+	height: 40px;
 	padding: 0 12px 1px;
 	font-size: 15px;
 }
@@ -359,7 +350,7 @@ body {
 	color: #fff;
 	box-shadow: none;
 	background: #007a5a;
-	font-weight: 700;
+	font-weight: 600;
 	transition: all 80ms linear;
 }
 .c-button {
@@ -414,12 +405,10 @@ body {
 .p-sticky_header_banner .p-upgrade_cta {
 	font-size: 15px;
 	line-height: 1.46668;
-	font-weight: initial;
-	opacity: 0;
-	height: 36px;
+	height: 40px;
 	padding-left: 11px;
 	padding-right: 11px;
-	font-weight: 700;
+	font-weight: 600;
 	transition: none;
 	display: inline-block;
 }
@@ -427,15 +416,10 @@ body {
 .c-button--plan_page:visited {
 	color: #007a5a;
 }
-.p-upgrade_cta {
-	width: 100%;
-	height: 100%;
-	padding: 16px 0;
-	font-size: 18px;
-}
+
 .c-button--medium {
 	min-width: 80px;
-	height: 36px;
+	height: 40px;
 	padding: 0 12px 1px;
 	font-size: 15px;
 }
@@ -545,6 +529,11 @@ button {
 	height: 20px;
 	display: inline-flex;
 	position: relative;
+}
+
+.p-pricing_table__cta {
+    border-left: 34px solid #fff;
+    padding-top: 32px;
 }
 
 /* faq section */
