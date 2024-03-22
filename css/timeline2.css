@@ -7,7 +7,8 @@
 .trusted,
 .ready,
 .feedback,
-.similar {
+.similar,
+.something {
 	padding: 3rem 20px;
 	background-color: rgb(49, 56, 87);
 }
@@ -874,11 +875,11 @@ p {
 
 .similar-card {
 	width: 30%;
-	height: 400px;
+	min-height: 400px;
 	background-color: #1e2846;
 	border-radius: 15px;
 	overflow: hidden;
-	max-width: 320px;
+	/* max-width: 320px; */
 }
 
 .similar-img {
@@ -919,4 +920,145 @@ p {
 	font-weight: 600;
 	font-size: 0.8rem;
 	margin-top: 1rem;
+}
+
+@media (max-width: 1024px) {
+	.similar-card-container {
+		flex-direction: column;
+	}
+	.similar-card {
+		width: 100%;
+	}
+
+	.similar-img {
+		max-height: 300px;
+		height: 300px;
+	}
+}
+
+/* something section */
+
+.something-container {
+	max-width: 1200px;
+	margin: auto;
+	color: white;
+}
+
+.something-heading {
+	text-align: center;
+	font-size: 2.4rem;
+	font-weight: 600;
+	margin-bottom: 3rem;
+}
+
+.something-cards {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-grow: 1;
+}
+
+.something-subheading {
+	margin-bottom: 1rem;
+}
+
+.something-card {
+	background-color: #1e2846;
+	position: relative;
+	border-radius: 5px;
+	border: 0.5px solid white;
+	min-height: 200px;
+	width: 32%;
+	min-width: 200px;
+	top: 0px;
+	left: 0px;
+	transition: box-shadow 0.2s ease-in-out, left 0.2s ease-in-out,
+		top 0.2s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+	.something-card {
+		width: 47%;
+	}
+}
+
+@media (max-width: 650px) {
+	.something-card {
+		width: 100%;
+	}
+}
+
+.something-card:hover {
+	box-shadow: -5px 5px white;
+	top: -5px;
+	left: 5px;
+}
+
+.something-headline {
+	padding: 8px 20px;
+	border-bottom: 1px solid white;
+}
+
+.something-card h2 {
+	padding: 0 20px;
+	margin-top: 1rem;
+	font-weight: 500;
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+}
+
+.something-text {
+	font-size: 0.8rem;
+	padding: 0 20px;
+}
+
+.something-row2 {
+	margin-top: 2rem;
+}
+
+.something-row2 .something-headline {
+	background-color: #04046b;
+}
+.something-row2 .something-card {
+	min-height: 300px;
+}
+
+.something-bottom {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+.something-bottom-content {
+	margin: 0 20px;
+	display: flex;
+	gap: 10px;
+	padding: 5px 0;
+	align-items: center;
+	border-top: 1px dashed white;
+}
+
+.something-bottom-content p {
+	font-size: 0.8rem;
+}
+
+.something-bottom span {
+	font-weight: 600;
+	padding: 0 5px;
+}
+
+.something-low {
+	justify-content: space-between;
+}
+
+.something-flex {
+	display: flex;
+	gap: 10px;
+}
+
+.something img {
+	width: 15px;
+	height: 15px;
+	filter: invert(100%);
 }
