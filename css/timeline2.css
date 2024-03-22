@@ -12,6 +12,10 @@
 	background-color: rgb(49, 56, 87);
 }
 
+.career {
+	background-color: #101523;
+}
+
 .career-container {
 	background-color: #101523;
 	color: white;
@@ -137,7 +141,7 @@ p {
 		width: max-content;
 	}
 
-	.career-head{
+	.career-head {
 		gap: 12px;
 	}
 
@@ -168,13 +172,14 @@ p {
 }
 .timeline_title {
 	height: 150px;
-	width: 100%;
+	max-width: 1200px;
+	margin: auto;
 	position: relative;
-	display: grid;
-	place-items: center;
+	display: flex;
+	align-items: center;
 	/* padding-left: 10px; */
-	font-size: 1.2rem;
-	color: rgb(206, 222, 255);
+	font-size: 1.6rem;
+	color: white;
 }
 
 @media (max-width: 700px) {
@@ -188,7 +193,7 @@ p {
 }
 
 .container {
-	max-width: 750px;
+	max-width: 900px;
 	margin: 50px auto;
 	min-height: 100%;
 	padding-right: 20px;
@@ -372,7 +377,7 @@ p {
 .timeline-lessons {
 	display: flex;
 	gap: 30px;
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 	padding-top: 20px;
 	padding-left: 20px;
 }
@@ -396,8 +401,8 @@ p {
 
 .timeline-content {
 	font-size: 0.8rem;
-	margin-top: 0.3rem;
-	margin-bottom: 1rem;
+	margin-top: 0.6rem;
+	margin-bottom: 2.6rem;
 	padding-left: 20px;
 }
 
@@ -714,10 +719,9 @@ p {
 .feedback-container {
 	max-width: 1200px;
 	margin: auto;
-	background-color: white;
 	display: flex;
 	justify-content: center;
-	padding: 2.6rem 5rem;
+	padding: 2.6rem 0px;
 }
 
 .feedback-grid {
@@ -853,13 +857,13 @@ p {
 	max-width: 1200px;
 	margin: auto;
 	color: white;
-	padding: 3rem 0;
+	padding: 2rem 0;
 }
 
 .similar-card-container {
 	display: flex;
-	justify-content: space-between;
-	gap: 20px;
+	justify-content: center;
+	gap: 2rem;
 }
 
 .similar-heading {
@@ -871,5 +875,48 @@ p {
 .similar-card {
 	width: 30%;
 	height: 400px;
-	background-color: white;
+	background-color: #1e2846;
+	border-radius: 15px;
+	overflow: hidden;
+	max-width: 320px;
+}
+
+.similar-img {
+	width: 100%;
+	max-height: 150px;
+	object-fit: cover;
+}
+
+.similar-content {
+	padding: 10px 20px;
+}
+
+.similar-subheading {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.similar-subheading img {
+	width: 15px;
+	height: 15px;
+	filter: invert(70%);
+}
+
+.similar p {
+	font-size: 0.8rem;
+	color: rgb(211, 211, 211);
+}
+
+.similar h2 {
+	margin-top: 0.5rem;
+	margin-bottom: 1.4rem;
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+.similar h3 {
+	font-weight: 600;
+	font-size: 0.8rem;
+	margin-top: 1rem;
 }
