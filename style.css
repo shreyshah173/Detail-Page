@@ -1139,7 +1139,7 @@ body {
 .more_section {
 	width: 50%;
 	height: 100%;
-	position: fixed;
+	/* position: fixed; */
 	top: 0;
 	left: -50%;
 	display: grid;
@@ -1214,7 +1214,7 @@ body {
 .more_section2 {
 	width: 50%;
 	height: 100%;
-	position: fixed;
+	/* position: fixed; */
 	top: 0;
 	left: -50%;
 	display: block;
@@ -1238,3 +1238,5 @@ body {
 	margin-bottom: 2rem;
 	cursor: pointer;
 }
+
+
