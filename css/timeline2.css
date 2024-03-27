@@ -489,6 +489,7 @@ p {
 
 .more_section {
 	width: 50%;
+	max-width: 700px;
 	height: 100%;
 	position: fixed;
 	top: 0;
@@ -507,7 +508,6 @@ p {
 
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	padding: 20px 30px;
 	border-radius: 0 8px 8px 0;
 	position: relative;
@@ -524,7 +524,8 @@ p {
 }
 
 .more_container_title {
-	font-size: 1.2rem;
+	font-size: 2.2rem;
+	font-weight: 800;
 }
 .more_banner_holder {
 	margin-top: 20px;
@@ -542,16 +543,72 @@ p {
 .more_description {
 	width: 100%;
 	margin-top: 20px;
+	text-align: justify;
 }
 .more_description p {
-	font-size: 0.9rem;
+	font-size: 1rem;
 	font-weight: 500;
+	font-weight: 600;
 }
 .more_close {
 	font-weight: 600;
 	font-size: 1.3rem;
 	cursor: pointer;
 	z-index: 888;
+}
+
+.more_roadmap_heading {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: rgb(16 98 251);
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.more_roadmap_cont {
+	display: flex;
+	flex-direction: column;
+}
+
+.more_roadmap_card {
+	align-self: start;
+	background-color: #1e2846;
+	border: 6px solid black;
+	outline: 4px solid rgb(16 98 251);
+	padding: 20px;
+	width: 40%;
+	min-width: 150px;
+	color: white;
+	margin: 0 2rem;
+	display: flex;
+	justify-content: center;
+	border-radius: 5px;
+	box-shadow: rgba(37, 118, 240, 0.568) 0px 19px 38px,
+		rgba(32, 96, 168, 0.22) 0px 15px 12px;
+	margin-top: 96px;
+}
+
+.more_roadmap_card p {
+	font-size: 1.2rem;
+}
+
+.svg-line {
+	position: absolute;
+	display: block;
+	left: 50%; /* Adjust as needed */
+	transform: translateX(-50%);
+	width: 30%; /* Adjust as needed */
+	height: 96px; /* Adjust as needed */
+	fill: none;
+}
+
+.scale-change {
+	transform: scaleX(-1);
+	left: 30%;
+}
+
+.svg-line path {
+	stroke: #000; /* Black color */
 }
 
 .max_width_section {
@@ -564,6 +621,7 @@ p {
 
 .more_section2 {
 	width: 50%;
+	max-width: 700px;
 	height: 100%;
 	position: fixed;
 	top: 0;
@@ -590,7 +648,7 @@ p {
 	cursor: pointer;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
 	.more_section {
 		width: 100%;
 	}
