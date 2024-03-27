@@ -667,7 +667,7 @@ p {
 		font-size: 1.2rem;
 	}
 
-	p {
+	.timeline p {
 		font-size: 0.8rem;
 	}
 
@@ -677,15 +677,15 @@ p {
 }
 
 .more-course-card {
-	width: 40%;
-	min-width: 300px;
+	width: 50%;
+	min-width: 330px;
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	overflow: hidden;
 }
 
 .more-ccard-heading {
-	height: 200px;
+	height: 180px;
 	width: 100%;
 	color: white;
 	padding-left: 10px;
@@ -696,7 +696,7 @@ p {
 }
 
 .ccard-content {
-	padding: 10px;
+	padding: 18px;
 }
 
 .ccard-students {
@@ -711,8 +711,8 @@ p {
 
 .more-course-card h4 {
 	line-height: 1.4rem;
-	margin-top: 0.8rem;
-	margin-bottom: 0.8rem;
+	margin-top: 1.2rem;
+	margin-bottom: 1.2rem;
 }
 
 .ccard-bookmark {
@@ -829,6 +829,106 @@ p {
 	background-color: rgb(16 98 251);
 	color: white;
 }
+.more-course-cont{
+	display: flex;
+	gap: 2rem;
+	overflow: scroll;
+	padding: 20px 10px;
+}
+
+.more-course-cont::-webkit-scrollbar{
+	display: none;
+}
+.projects-cards{
+	min-width: 330px;
+}
+.projects-content{
+	padding: 15px;
+	width: 50%;
+	min-width: 330px;
+}
+
+.projects-content p{
+	color:rgb(16 98 251) ;
+	font-size: .8rem;
+	font-weight: 600;
+}
+
+.projects-content h2{
+	margin: .8rem 0;
+	font-size: 1.35rem;
+	font-weight: 700;
+}
+
+.projects-content h3{
+	margin-top: 1rem;
+	font-size: .8rem;
+	font-weight: 600;
+}
+
+.projects-btn{
+	background-color:rgb(16 98 251) ;
+	max-width: max-content;
+	padding: .4rem 1.5rem;
+	color: white;
+	text-align: center;
+	margin: 1.5rem 0 0 0;
+}
+
+
+.more-external-cont{
+	display: flex;
+	gap: 2rem;
+	padding: 10px 5px;
+	overflow: scroll;
+}
+
+.more-external-cont::-webkit-scrollbar{
+	display: none;
+}
+
+.more-external-card{
+	background-color: rgb(243, 255, 131);
+	gap: 2rem;
+	border-radius: 15px;
+	padding: 20px;
+	width: 70%;
+	min-width: 380px;
+}
+.more-external-heading{
+	display: flex;
+	gap: 10px;
+	margin-bottom: 1rem;
+	font-size: .8rem;
+	align-items: center;
+}
+
+.more-external-heading img{
+	width:10px;
+	height: 10px;
+}
+
+.external-text{
+	margin-top: .8rem;
+	font-weight: 500;
+}
+
+.external-text span{
+	font-weight: 700;
+	padding-left: 7px;
+
+}
+
+.external-btn{
+	background-color: black;
+	color: white;
+	padding: .6rem 1.2rem;
+	width: max-content;
+	text-align: center;
+	margin-top: .8rem;
+	margin-bottom: .4rem;
+}
+
 
 /* ====== about section ==========  */
 
