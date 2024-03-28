@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
 			moreSection.style.left = "-100%";
 			body.style.overflow = "auto";
 			overlay.style.display = "none";
-			footer.style.maxHeight = "0px"
+			footer.style.display = "none"
 		} else {
 			moreSection.style.left = "0px";
 			body.style.overflow = "hidden";
 			overlay.style.display = "block";
-			footer.style.maxHeight = "100px";
+			footer.style.display = "flex";
 		}
 	};
 
