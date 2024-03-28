@@ -512,6 +512,7 @@ p {
 	border-radius: 0 8px 8px 0;
 	position: relative;
 	font-family: "Roboto", sans-serif;
+	padding-bottom: 8rem;
 }
 
 .more_container::-webkit-scrollbar {
@@ -756,7 +757,7 @@ p {
 	display: flex;
 	gap: 10px;
 	border-bottom: 2px solid rgb(53, 53, 53);
-	padding-bottom: .5rem;
+	padding-bottom: 0.5rem;
 }
 
 .related-img {
@@ -785,109 +786,107 @@ p {
 .related-details h3 {
 	color: rgb(16 98 251);
 	font-size: 1.2rem;
-	margin-top: .3rem;
+	margin-top: 0.3rem;
 }
 
-.related-believers{
+.related-believers {
 	display: flex;
 	gap: 10px;
 }
 
-.related-believers p{
-	font-size: .6rem;
+.related-believers p {
+	font-size: 0.6rem;
 	font-weight: 600;
-	
 }
 
-.related-believers img{
+.related-believers img {
 	width: 15px;
 	height: 15px;
 }
 
 .more-related-card h2 {
-	font-size: .9rem;
-	margin-top: .6rem;
-	margin-bottom: .6rem;
+	font-size: 0.9rem;
+	margin-top: 0.6rem;
+	margin-bottom: 0.6rem;
 }
 
-.related-btns{
+.related-btns {
 	display: flex;
 	justify-content: space-around;
 }
 
-.connect-btn{
+.connect-btn {
 	color: rgb(16 98 251);
 
 	border: 2px solid rgb(16 98 251);
 	padding: 2px 10px;
-	margin: .8rem 0;
+	margin: 0.8rem 0;
 	font-weight: 600;
-	font-size: .9rem;
+	font-size: 0.9rem;
 }
 
-.message-btn{
+.message-btn {
 	background-color: rgb(16 98 251);
 	color: white;
 }
-.more-course-cont{
+.more-course-cont {
 	display: flex;
 	gap: 2rem;
 	overflow: scroll;
 	padding: 20px 10px;
 }
 
-.more-course-cont::-webkit-scrollbar{
+.more-course-cont::-webkit-scrollbar {
 	display: none;
 }
-.projects-cards{
+.projects-cards {
 	min-width: 330px;
 }
-.projects-content{
+.projects-content {
 	padding: 15px;
 	width: 50%;
 	min-width: 330px;
 }
 
-.projects-content p{
-	color:rgb(16 98 251) ;
-	font-size: .8rem;
+.projects-content p {
+	color: rgb(16 98 251);
+	font-size: 0.8rem;
 	font-weight: 600;
 }
 
-.projects-content h2{
-	margin: .8rem 0;
+.projects-content h2 {
+	margin: 0.8rem 0;
 	font-size: 1.35rem;
 	font-weight: 700;
 }
 
-.projects-content h3{
+.projects-content h3 {
 	margin-top: 1rem;
-	font-size: .8rem;
+	font-size: 0.8rem;
 	font-weight: 600;
 }
 
-.projects-btn{
-	background-color:rgb(16 98 251) ;
+.projects-btn {
+	background-color: rgb(16 98 251);
 	max-width: max-content;
-	padding: .4rem 1.5rem;
+	padding: 0.4rem 1.5rem;
 	color: white;
 	text-align: center;
 	margin: 1.5rem 0 0 0;
 }
 
-
-.more-external-cont{
+.more-external-cont {
 	display: flex;
 	gap: 2rem;
 	padding: 10px 5px;
 	overflow: scroll;
 }
 
-.more-external-cont::-webkit-scrollbar{
+.more-external-cont::-webkit-scrollbar {
 	display: none;
 }
 
-.more-external-card{
+.more-external-card {
 	background-color: rgb(243, 255, 131);
 	gap: 2rem;
 	border-radius: 15px;
@@ -895,40 +894,91 @@ p {
 	width: 70%;
 	min-width: 380px;
 }
-.more-external-heading{
+.more-external-heading {
 	display: flex;
 	gap: 10px;
 	margin-bottom: 1rem;
-	font-size: .8rem;
+	font-size: 0.8rem;
 	align-items: center;
 }
 
-.more-external-heading img{
-	width:10px;
+.more-external-heading img {
+	width: 10px;
 	height: 10px;
 }
 
-.external-text{
-	margin-top: .8rem;
+.external-text {
+	margin-top: 0.8rem;
 	font-weight: 500;
 }
 
-.external-text span{
+.external-text span {
 	font-weight: 700;
 	padding-left: 7px;
-
 }
 
-.external-btn{
+.external-btn {
 	background-color: black;
 	color: white;
-	padding: .6rem 1.2rem;
+	padding: 0.6rem 1.2rem;
 	width: max-content;
 	text-align: center;
-	margin-top: .8rem;
-	margin-bottom: .4rem;
+	margin-top: 0.8rem;
+	margin-bottom: 0.4rem;
 }
 
+.more-resource {
+	margin-top: 3rem;
+}
+
+.more-resource-card {
+	background-color: #0d3488;
+	border-radius: 15px;
+	padding: 20px;
+	min-height: 250px;
+	width: 80%;
+	min-width: 400px;
+}
+
+.more-resource-card p {
+	font-size: 1.4rem;
+	color: white;
+}
+
+.more-footer {
+	position: relative;
+}
+
+.more-footer-container {
+	height: 70px;
+	max-height: 100px;
+	background-color: yellow;
+	display: flex;
+	gap: 2.5rem;
+	position: fixed;
+	/* width: 100%; */
+	bottom: 0;
+	left: 0;
+	right: 50%;
+	transition: max-height 0.5s ease-in;
+	padding-left: 2rem;
+	align-items: center;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (max-width: 700px) {
+	.more-footer-container {
+		right: 0px;
+	}
+}
+
+.more-footer-container p {
+	height: max-content;
+	background-color: white;
+	padding: 6px 15px;
+	font-weight: 600;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
 
 /* ====== about section ==========  */
 
