@@ -329,6 +329,19 @@
 	border-radius: 5px;
 }
 
+@media (max-width: 950px) {
+	.more-topic-card {
+		min-width: 380px;
+	}
+	.topic-content {
+		font-size: 0.8rem;
+	}
+
+	.topic-btns {
+		font-size: 0.8rem;
+	}
+}
+
 /* more section */
 
 .more-container {
