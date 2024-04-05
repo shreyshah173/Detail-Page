@@ -455,3 +455,23 @@
   line-height: 1.5;
   font-weight: 400;
 }
+
+.eveninodd {
+  display: none;
+}
+
+@media (max-width:786px) {
+  .eveninodd {
+    display: block;
+  }
+  .even-card {
+    display:none;
+  }
+
+  .more-topic-card {
+    width: 98vw;
+    margin-right:5px ;
+  }
+}
+
+
