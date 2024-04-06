@@ -141,7 +141,7 @@
   margin: 0 10px;
 }
 
-.separator > p {
+.separator>p {
   word-break: keep-all;
   display: block;
   text-align: center;
@@ -298,8 +298,10 @@
 }
 
 .topic-content {
-  font-weight: 500;
+  /* font-weight: 500; */
   margin-bottom: 1rem;
+  max-width: 100%; /* Ensure the paragraph doesn't exceed the width of its container */
+  word-wrap: break-word; /* Enable word wrapping to prevent text from extending beyond the container */
 }
 
 .topic-number {
@@ -341,6 +343,7 @@
   .more-topic-card {
     min-width: 380px;
   }
+
   .topic-content {
     font-size: 0.8rem;
   }
@@ -390,7 +393,7 @@
 }
 
 /* topic details */
-.topic-details {	
+.topic-details {
   box-sizing: border-box;
   margin: 0px;
   min-width: 0px;
@@ -464,14 +467,27 @@
   .eveninodd {
     display: block;
   }
-  .even-card {
-    display:none;
+
+  .even-card-details {
+    display: none;
   }
 
   .more-topic-card {
-    width: 85vw;
-    margin-right:5px ;
+    width: 30vw;
+    max-width: 1vw;
+    /* margin-right:20px ; */
   }
 }
 
+@media (max-width:400px) {
+  .more-topic-card{
+    width: 10vw;
+    min-width: 310px;
+  }
+}
 
+@media (min-width : 786px) {
+  .odd-card-details {
+    width: 50%;
+  }
+}

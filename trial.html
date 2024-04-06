@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Cards</title>
+<style>
+  .outer-div {
+    width: 100%; /* Ensures outer div takes full width */
+    max-width: 100%; /* Ensures outer div doesn't exceed screen width */
+    overflow-x: auto; /* Allows horizontal scroll if content overflows */
+    padding: 10px; /* Optional: Add padding for better spacing */
+  }
+
+  .cards-container {
+    display: flex; /* Display cards in a row */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
+    gap: 10px; /* Optional: Add spacing between cards */
+    justify-content: center; /* Center cards horizontally */
+  }
+
+  .card {
+    width: 200px; /* Set a fixed width for the cards */
+    height: 300px; /* Set a fixed height for the cards */
+    background-color: #f0f0f0; /* Optional: Add background color */
+    border: 1px solid #ccc; /* Optional: Add border */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for depth */
+  }
+</style>
+</head>
+<body>
+
+<div class="outer-div">
+  <div class="cards-container">
+    <!-- Example cards -->
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <!-- Add more cards here -->
+  </div>
+</div>
+
+</body>
+</html>
